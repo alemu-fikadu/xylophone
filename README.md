@@ -4,7 +4,9 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a xylophone sound app 4th project.
+
+<img src="images/demo1.png" width="230" height="430">
 
 A few resources to get you started if this is your first Flutter project:
 
