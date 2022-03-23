@@ -6,6 +6,11 @@ void main() {
 }
 
 class Xylophone extends StatelessWidget {
+  void playsound(int soundNumber) {
+    final player = AudioCache();
+    player.play('note$soundNumber.wav');
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,73 +20,68 @@ class Xylophone extends StatelessWidget {
           child: Column(
             children: <Widget>[
               TextButton(
-                child: Container(
-                  padding: EdgeInsets.all(38),
-                  color: Colors.red,
+                child: Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(36),
+                    color: Colors.red,
+                  ),
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note1.wav');
+                  playsound(1);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.yellow,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note2.wav');
+                  playsound(2);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.orange,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note3.wav');
+                  playsound(3);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.green,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note4.wav');
+                  playsound(4);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.teal,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note5.wav');
+                  playsound(5);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.blue,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note6.wav');
+                  playsound(6);
                 },
               ),
               TextButton(
                 child: Container(
-                  padding: EdgeInsets.all(38),
+                  padding: EdgeInsets.all(36),
                   color: Colors.purple,
                 ),
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note7.wav');
+                  playsound(7);
                 },
               ),
             ],
